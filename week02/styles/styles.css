@@ -14,7 +14,7 @@
     }
 
     main {
-        max-width: 840;
+        max-width: 840px;
         Border: 1px solid steelblue;
         padding: 2px;
         box-shadow: 0 0 30px gray;
