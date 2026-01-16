@@ -25,12 +25,12 @@
         box-shadow: 0 0 10px gray;
     }
 
-    main image {
+    main img {
         width: 150px;
         height: auto;
         border: 10px steelblue;
         padding: 2px;
-        box-shadow: 0, 0, 10px, gray;
+        box-shadow: 0 0 10px gray;
     }
 
     aside {
