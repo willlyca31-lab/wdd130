@@ -1,43 +1,82 @@
-    p {
-        margin: 0px;
-        padding: 0px
-    }
+   /* class selectors*/
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
 
-    nav a {
-        color: white;
-        padding: 10px;
-        display: block;
-    }
+   body {
+       font-size: 16px;
+       font-family: arial, sans-serif;
+   }
 
-    h1 {
-        color: steelblue;
-    }
+   p {
+       margin: 1rem;
+       padding: 0px
+   }
 
-    main img {
-        width: 150px;
-        height: auto;
-        Border: 1px solid steelblue;
-        padding: 2px;
-        box-shadow: 0 0 10px gray;
-    }
+   nav a {
+       color: white;
+       padding: 10px;
+       display: block;
+   }
 
-    aside {
-        width: 20em;
-        margin: 1em;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        padding: 1em;
-        background-color: #eee;
-        color: #333;
-        text-align: center;
-    }
+   h1 {
+       color: steelblue;
+       padding: 5rem;
+   }
 
-    aside img {
-        width: 200px;
-        height: auto;
-    }
+   main {
+       max-width: 640px;
+   }
 
-    footer {
-        margin-top: 1em;
-        border-top: 1px solid #000;
-        text-align: center;
-    }
+   main img {
+       width: 150px;
+       height: auto;
+       Border: 1px solid steelblue;
+       padding: 2px;
+       box-shadow: 0 0 10px gray;
+       float: right;
+       margin: 0 0 1rem 1rem;
+   }
+
+   aside {
+       width: 20em;
+       margin: 1em;
+       border: 1px solid rgba(0, 0, 0, 0.2);
+       padding: 1em;
+       background-color: #eee;
+       color: #333;
+       text-align: center;
+       position: relative;
+   }
+
+   aside img {
+       width: 200px;
+       height: auto;
+   }
+
+   aside h2 {
+       position: absolute;
+       top: 65px;
+       left: 150px;
+   }
+
+   footer {
+       margin-top: 1em;
+       border-top: 1px solid #000;
+       text-align: center;
+   }
+
+   /* class selectors */
+   .box {
+       margin: 1rem;
+       border: 1px solid rgb (0, 0, 0, 0.1);
+       padding: 1rem;
+       background-color: #eee;
+       color: #000;
+   }
+
+   .ident {
+       margin-left: 1rem;
+   }
