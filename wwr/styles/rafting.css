@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 :root {
@@ -88,6 +88,6 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-.social media img {
+.social media a {
     text-decoration: none;
 }
