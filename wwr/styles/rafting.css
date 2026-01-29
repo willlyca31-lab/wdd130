@@ -10,6 +10,10 @@ body {
     color: #333;
 }
 
+:root {
+    color: #1e6091
+}
+
 header img {
     width: 120px;
 }
@@ -34,15 +38,17 @@ nav a:hover {
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 20%;
+    color: var(#fff);
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -56,9 +62,10 @@ article {
     gap: 1rem;
 }
 
-article img {
-    width: 150px;
-    border-radius: 5px;
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 120px;
 }
 
 section {
@@ -82,6 +89,5 @@ footer p {
 }
 
 .social media img {
-    width: 30px;
-    margin: 0 0.5rem;
+    text-decoration: none;
 }
