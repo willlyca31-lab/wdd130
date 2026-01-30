@@ -30,7 +30,7 @@
         padding: 8px;
     }
 
-    .social a {
+    .socialmedia {
         text-decoration: none;
     }
 
@@ -47,7 +47,7 @@
     .hero article img {
         float: right;
         width: 125px;
-        margin-left: 16px;
+        ;
     }
 
     h1 {
