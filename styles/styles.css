@@ -59,18 +59,3 @@
         float: right;
         width: 125px;
     }
-
-    /*class selector*/
-
-    .box {
-        margin: 1rem;
-        border: 1px solid rgba(0 0 0 .1);
-        padding: 1rem;
-        background-color: #eee;
-        color: #000;
-    }
-
-    .ident {
-        padding-left: 1rem;
-
-    }
