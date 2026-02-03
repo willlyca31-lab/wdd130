@@ -96,6 +96,7 @@ footer {
 
 footer {
     background-color: var(--footer-bg);
+    color: #fff;
     padding: 2rem 1rem
 }
 
