@@ -1,5 +1,6 @@
 :root {
-    --primary-color: var(--accent1-color) --Secondary-color: #f4a261;
+    --primary-color: var(--accent1-color);
+    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
