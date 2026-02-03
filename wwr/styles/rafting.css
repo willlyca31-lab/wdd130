@@ -1,6 +1,5 @@
 .root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261: #f4a261;
+    --primary-color: var(--accent1-color) --secondary-color: #f4a261: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -39,7 +38,7 @@ article {
     padding: 8px;
 }
 
-.social media a {
+.socialmedia a {
     text-decoration: none;
 }
 
