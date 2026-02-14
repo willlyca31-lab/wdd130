@@ -176,8 +176,10 @@ section .adventure .adventure-gallery figcaption {
 
 footer {
     background-color: var(--primary-color);
+    color: white;
     padding: 1rem 5%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -185,7 +187,7 @@ footer p {
     margin: 0;
 }
 
-footer .socialmedia {
+footer .socialmedia{
     display: flex;
     gap: 0.5rem;
 }
