@@ -1,7 +1,5 @@
 :root {
-    --primary-color: #1f6f8b;
-    --secondary-color: #0b3c5d;
-    --light-bg:#e6f2f7;
+    --primary-color: #264653;
     --text-color:#000000;
     --accent1-color: #264653;
     --white-color:#ffffff;
@@ -17,13 +15,6 @@
     margin: 0 auto;
     padding: 0 4rem 0.8rem;
     box-sizing: border-box;
-}
-
-.page-title {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
 }
 
 a {
@@ -132,16 +123,6 @@ main {
     float: right;
 }
 
-.mission {
-    position: absolute;
-    bottom: 30px;
-    left: 5%;
-    background: rgba(255, 255,255,0.09);
-    border-left: 6px solid var(--primary-color);
-    padding: 20px;
-    max-width: 600px;
-}
-
 main section {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -162,12 +143,6 @@ main section a {
 main section h2 {
     text-align: center;
     margin-top: 0;
-}
-
-section h2 {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5rem;
 }
 
 section.history .history-layout img {
