@@ -264,6 +264,13 @@ section .adventure .adventure-gallery figure {
     border-radius: 6px;
 }
 
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 0 ;
+    border-radius: 4px;
+}
+
 .contact-split_form .contact-form {
     display: grid;
     gap: 9rem;
