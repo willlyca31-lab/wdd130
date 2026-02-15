@@ -51,11 +51,12 @@ body {
 }
 
 header {
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 1rem 5%;
-    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: var(--secondary-color);
 }
 
 header .logo {
@@ -85,68 +86,44 @@ main {
 }
 
 .hero {
-    margin-top: 1rem;
     position: relative;
-    padding: 1.5rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--wite-color);
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
 .hero img {
     width: 100%;
     display: block;
-    max-height: 300px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.hero h1 {
-    text-align: center;
-    margin: 0 0 1rem;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-40%);
-    text-shadow: 0 2px 6px rgba(0, 0,0,0.60);
-    padding: .5rem 1rem;
-    border-radius: 5px;
-}
-
-.hero article {
-    display: grid;
-    grid-template-columns: 3fr auto;
-    gap: 1rem;
-    align-items: center;
-    position: absolute;
-    bottom: 3%;
-    left: 5%;
-    background: var(--border-color);
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.hero article img {
-    width: 8px;
-    height:auto;
-    margin-left: 1rem;
-    float: right;
 }
 
 .mission {
     position: absolute;
-    bottom: 30px;
-    left: 5%;
-    background: rgba(255, 255,255,0.09);
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255,255,0.95);
     border-left: 6px solid var(--primary-color);
     padding: 20px;
-    max-width: 600px;
+    max-width: 650px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.mission img {
+    width: 300px;
+    float: right;
+    margin: 0 0 10px 20px;
+    border-radius: 6px;
+}
+
+.mission::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 main section {
     margin-top: 2rem;
     padding: 1.5rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--section-bg);
     color: var(--text-color);
 }
 
@@ -167,13 +144,19 @@ main section h2 {
 section h2 {
     background-color: var(--primary-color);
     color: white;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    margin: 0;
 }
 
 section.history .history-layout img {
     max-width: 220px;
     width: 100%;
     display: block;
+}
+
+.history,.adventure-contener {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
 }
 
 section .adventure p {
@@ -199,8 +182,16 @@ section .adventure .adventure-gallery figcaption {
     font-size: 0.85rem;
 }
 
+.adventure-contener {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    background-color: var(--light-bg);
+    padding: 1rem;
+}
+
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     padding: 1rem 5%;
     display: flex;
