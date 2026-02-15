@@ -14,8 +14,8 @@
 *,
 *::before,
 *::after {
-    margin: 0 auto;
-    padding: 0 4rem 0.8rem;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -82,38 +82,81 @@ header nav a:hover {
 }
 
 main {
-    padding: 0.5% 2rem;
+    padding: 2rem;
 }
 
 .hero {
     position: relative;
+    width: 100%;
     max-width: 1000px;
     margin: 2rem auto;
+    border: 1px solid var(--border-color);
+    background-color: var(--white-color);
+    height: 600px;
+    overflow: hidden ;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    color: white;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
+    z-index: 2;
 }
 
 .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero h1,
+.hero article,
+.mission {
+    position: absolute;
+    z-index: 2;
 }
 
 .mission {
+    z-index: 2;
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255,255,0.95);
-    border-left: 6px solid var(--primary-color);
-    padding: 20px;
-    max-width: 650px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255,255,0.96);
+    border-left: 8px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 25px;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .mission img {
-    width: 300px;
+    width: 150px;
     float: right;
     margin: 0 0 10px 20px;
     border-radius: 6px;
 }
+
+.mission h2 {
+    background-color: var(--primary-color);
+    color:white;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
 
 .mission::after {
     content: "";
