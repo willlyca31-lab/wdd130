@@ -82,7 +82,7 @@ header nav a:hover {
 }
 
 main {
-    padding: 2rem;
+    display: block;
 }
 
 .hero {
@@ -117,7 +117,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 }
 
 .hero h1,
@@ -130,22 +129,25 @@ main {
 .mission {
     z-index: 2;
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
+    display: flex;
+    gap: 20px;
     transform: translateX(-50%);
     background: rgba(255, 255,255,0.96);
     border-left: 8px solid var(--primary-color);
     border-radius: 6px;
     padding: 25px;
-    max-width: 700px;
+    max-width: 500px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    align-items: flex-start;
 }
 
 .mission img {
-    width: 150px;
-    float: right;
-    margin: 0 0 10px 20px;
+    width: 130px;
+    height:auto;
     border-radius: 6px;
+    flex-shrink: 0;
 }
 
 .mission h2 {
@@ -155,12 +157,18 @@ main {
     margin-bottom: 15px;
     text-align: center;
     border-radius: 6px;
+    margin-top: 0;
 }
 
 
 .mission::after {
     content: "";
     display: block;
+    clear: both;
+}
+
+section {
+    width: 100%;
     clear: both;
 }
 
@@ -202,9 +210,21 @@ section.history .history-layout img {
     padding: 1.5rem;
 }
 
+.history {
+    max-width: 1000px;
+    margin:0 auto 2rem auto;
+}
+
+.history p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
 section .adventure p {
     text-align: center;
 }
+
 
 section .adventure .adventure-gallery figure {
     flex: 1 1 calc(20% - 1rem);
@@ -230,7 +250,9 @@ section .adventure .adventure-gallery figcaption {
     gap: 15px;
     justify-content: space-between;
     background-color: var(--light-bg);
-    padding: 1rem;
+    padding: 30px 10%;
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
 }
 
 footer {
