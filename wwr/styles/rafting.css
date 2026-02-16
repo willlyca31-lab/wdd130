@@ -161,6 +161,10 @@ main {
     clear: both;
 }
 
+.trip-grid {
+    display: flex;
+}
+
 section {
     width: 1px solid var(--border-color);
     padding: 1rem;
