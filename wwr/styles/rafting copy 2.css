@@ -5,6 +5,7 @@
     --text-color:#000000;
     --accent1-color: #264653;
     --white-color:#ffffff;
+    --border-color:#232323;
     --body-font: "Arial", "Helvetica", sans-serif;
 }
 
@@ -55,7 +56,6 @@ header {
     padding: 10px 5%;
     background-color: var(--secondary-color);
     color: var(--white-color);
-    border-bottom: 3px solid var(--border-color);
 }
 
 header .logo {
@@ -93,8 +93,8 @@ main {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 100px;
-    right: 50;
+    left: 20px;
+    right: 0;
     text-align: center;
     color: var(--white-color);
     padding: 20px;
@@ -103,7 +103,7 @@ main {
 }
 
 .hero img {
-    width: 150%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -228,9 +228,7 @@ section .adventure p {
 }
 
 .adventure-gallery figure {
-    border: 1px solid var(--border-color);
-    padding: 0,5rem;
-    background-color: var(--light-bg);
+    flex: 1 1 calc(20% - 1rem);
     text-align: center;
 }
 
