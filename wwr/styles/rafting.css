@@ -6,8 +6,6 @@
     --accent1-color: #264653;
     --white-color:#ffffff;
     --border-color:#232323;
-    --section-bg:#fafafa;
-    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
 }
 
@@ -57,6 +55,7 @@ header {
     justify-content: space-between;
     padding: 10px 5%;
     background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 header .logo {
@@ -71,7 +70,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white-color);
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
 }
@@ -94,10 +93,10 @@ main {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 0%;
+    left: 20px;
     right: 0;
     text-align: center;
-    color: white;
+    color: var(--white-color);
     padding: 20px;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -105,7 +104,14 @@ main {
 
 .hero img {
     width: 100%;
+    height: auto;
     display: block;
+}
+
+.hero article img {
+    float: right;
+    width: 200px; ;
+    margin-left: 50px;
 }
 
 .hero h1,
@@ -115,6 +121,14 @@ main {
     z-index: 2;
 }
 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
 .mission-card {
     position: absolute;
     bottom: 10px;
@@ -206,13 +220,15 @@ section .adventure p {
     text-align: center;
 }
 
+.adventure-gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
 
-section .adventure .adventure-gallery figure {
+.adventure-gallery figure {
     flex: 1 1 calc(20% - 1rem);
     text-align: center;
-    background-color: var(--border-color);
-    padding: 0.75rem;
-    border-radius: 4px;
 }
 
 section .adventure .adventure-gallery img {
