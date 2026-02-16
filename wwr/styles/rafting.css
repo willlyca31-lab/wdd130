@@ -103,14 +103,14 @@ main {
 }
 
 .hero img {
-    width: 120%;
+    width: 125%;
     height: auto;
     display: block;
 }
 
 .hero article img {
     float: right;
-    width: 200px; ;
+    width: 100px; ;
     margin-left: 50px;
 }
 
