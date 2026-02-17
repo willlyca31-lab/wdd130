@@ -163,6 +163,7 @@ main {
 
 .trip-grid {
     display: flex;
+    gap: 2rem;
 }
 
 section {
